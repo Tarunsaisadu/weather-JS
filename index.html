@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <title>WAETHER APP</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 id="nav-logo">
+                <span><img src="https://img.icons8.com/cute-clipart/64/000000/partly-cloudy-day.png"
+                        style="width: 30px; margin-top: 5px; margin-left: 20px;" /></span>
+                <span>Weather App</span>
+            </h1>
+            <div class="inputField">
+                <input type="text" name="text" id="inputText" class="inputText" placeholder="search by city"
+                    onchange="getWeather()">
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero-container">
+        <div class="temp-div">
+            <h2 id="temp">Temp</h2>
+        </div>
+
+
+        <div class="city-div">
+            <h2 class="city" id="city">City</h2>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div>
+            status
+            <h4 id="weather"></h4>
+        </div>
+        <div>
+            humidity
+            <h4 id="humidity"></h4>
+        </div>
+        <div>
+            pressure
+            <h4 id="pressure"></h4>
+        </div>
+        <div>
+            wind speed
+            <h4 id="wind"></h4>
+        </div>
+
+    </div>
+    <footer>
+        <p>❅ Built with JavaScript ❤️ ❅</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
